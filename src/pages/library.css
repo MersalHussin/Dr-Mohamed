@@ -1,0 +1,66 @@
+:root{
+    --main--color: #008896;
+    --pink--color: #ec5d80;
+    --yellow--color:#fbbe9c;
+    --dark--color:#175a96;
+  }
+
+/* Start Library */
+.library-container{
+margin: 50px;
+}
+.library-container .container{
+    flex-wrap: wrap;
+    gap: 20px;
+max-width: 800px;
+}
+.library-container .box-book{
+max-width: 250px;
+border-radius: 5px;
+background: #f5f5f59b;
+}
+.library-container .box-book:hover .book-img{
+border-radius: 10px;
+background: #f5f5f59b;
+filter: blur(1px);
+}
+
+
+.library-container .box-book .book-img{
+max-width: 250px;
+border-radius: 5px;
+padding: 15px 15px 0 15px;
+transition: 0.3s;
+}
+.library-container .box-book .data-txt {
+max-width: 250px;
+padding:  0 20px;
+}
+.library-container .box-book .data-txt h1{
+max-width: 100%;
+text-align: center;
+font-size: 20px;
+color: var(--dark--color);
+}
+.library-container .box-book .data-txt p{
+max-width: 100%;
+font-weight: 300;
+text-align: right;
+}
+.library-container .box-book .link a{
+max-width: 90%;
+text-align: center;
+background-color: var(--main--color);
+border: 2px solid var(--main--color);
+padding: 15px;
+border-radius:5px;
+margin: 20px auto;
+color: white;
+display: block;
+transition: 0.3s;
+}
+.library-container .box-book:hover .link a{
+    color: var(--main--color);
+    background-color: white;
+}
+/* End  Library */

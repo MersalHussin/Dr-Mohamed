@@ -1,0 +1,113 @@
+:root{
+    --main--color: #008896;
+    --pink--color: #ec5d80;
+    --yellow--color:#fbbe9c;
+    --dark--color:#175a96;
+  }
+
+  
+/* Start-- Courses-Section -- */
+#courses{
+    min-height: 100vh;;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    padding:50px;
+  }
+  #courses .container{
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .courses-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .course-box img{
+    width: 100%;
+    /* border-radius: 5px 5px 0 0; */
+    position: relative;
+    z-index: -1;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    scale: 1.01;
+  }
+  .course-box:hover img{
+    transform: scale(1.05) rotate(1deg);
+    filter: blur(1px);
+  }
+  .course-box h1{
+  font-size: 20px;
+  color: var(--main--color);
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 5px 15px;
+  }
+  .course-box:hover h1{
+    color: var(--pink--color);
+  }
+  .course-box{
+    width: 330px;
+    height: 100%;
+    border: 3px solid var(--main--color);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .course-box p{
+    color: #222;
+    font-weight: 400;
+    padding: 5px 20px 10px;
+    text-align: start;
+    font-size: 14px;
+  }
+
+  /* Blog in  */
+  .container-blog .blog-image{
+    width: 900px;
+  }
+  .container-blog p{
+    width: 900px;
+  }
+  .container-blog h1{
+    text-align: start;
+    color: var(--dark--color);
+    padding: 20px 0 ;
+  }
+  
+  
+  
+  @media (  width < 930px ){
+    .container-blog .blog-image{
+      width: 500px;
+    }
+    .container-blog p{
+      width: 500px;
+    }
+    .container-blog h1{
+      font-size: 25px;
+    }
+  }
+  @media (  width < 520px ){
+    .container-blog .blog-image{
+      width: 300px;
+    }
+    .container-blog p{
+      width: 300px;
+    }
+    .container-blog h1{
+      font-size: 20px;
+    }
+  }
+  /* Blog in  */
+  
+  /* End-- Courses-Section -- */
+  

@@ -131,24 +131,21 @@ const Landing = () => {
     <>
       <main>
       <section className="hero-section">
-        <img src="/assets/Logo Pattern.svg" className="pattern-image" alt="pattern"/>
         <div className="container">
             <div className="data">
-  
-                <div className="text">
-                    <h1>أسرة أفــــضل,
-                        مجتمع أفضل</h1>
-                    <p>
-                        تطبيق لـ الإرشاد والدعم لبناء علاقات
-أسرية أقوى وأكثر وعيًا في المجتمع
-                    </p>
-                    <div className="links">
-                        <a href="#ios"><img src="/assets/IOS.png" alt="android-app"/></a>
-                        <a href="#andriod"><img src="/assets/Android.png" alt="android-app"/></a>
-                    </div>
-                </div>
                 <div className="image">
-                    <img src="/assets/Landing Section.webp" alt="Landing-image"/>
+                    <img src="/assets/Dr.Mohamed-image.png" alt="Landing-image"/>
+                </div>
+                <div className="text">
+                    <h1>
+                    مرحبًا بك في الموقع الرسمي <span>
+                      
+                       لـ د.محمد حربي
+                      </span>
+                     </h1>
+                    <p className="text-rectangle">
+                    مؤسس قدرات | دكتوراه في إدارة الأعمال | مستشار في ريادة الأعمال
+                    </p>
                 </div>
             </div>
             <div>
@@ -160,36 +157,10 @@ const Landing = () => {
     </section>
         <section id="about-sec">
           <div className="container coulmn">
-            <img src="/assets/Ausrah-mocukup.svg" style={{padding:"40px"}} alt="about" />
             <div className="about-txt">
-              <h1 className="title">نبذة عن  أُسرة</h1>
+              <h1 className="title">من أنا</h1>
               <p className="about-data">
-              أسرة ليس مجرد تطبيق، بل هو منصة تفاعلية تهدف إلى تمكين الأهل  من اكتشاف إمكانياتهم، وبناء شخصياتهم من خلال دعم متكامل 
-              </p>
-              {/* <a href="#about">نزل الكتالوج</a> */}
-            </div>
-          </div>
-        </section>
-        <section id="about-sec">
-          <div className="container">
-            <div className="about-txt">
-              <h1 className="title">مدربك بين يديك</h1>
-              <p className="about-data">
-              مع تطبيق سرة، يصبح المدرب الشخصي جزءًا من حياتك اليومية. سواء كنت تسعى لتطوير مهاراتك أو التغلب على تحدياتك، فإن مدربي "أسرة" موجودون لدعمك خطوة بخطوة لتحقيق أفضل نسخة من نفسك.
-              </p>
-              {/* <a href="#about">نزل الكتالوج</a> */}
-            </div>
-            <img src="/assets/Phone-image.svg" alt="about" />
-          </div>
-        </section>
-        <section id="about-sec">
-          <div className="container coulmn">
-            <img src="/assets/Family-image1.svg" alt="about" />
-            <div className="about-txt">
-              <h1 className="title">الأسرة هي الأساس </h1>
-              <p className="about-data">
-              نسعى من خلال تطبيق أسرة إلى تعزيز الترابط الأسري وبناء جيل واعٍ ومتماسك. نوفر بيئة تفاعلية تتيح للآباء والأمهات توجيه أطفالهم وتنمية مهاراتهم بطرق مبتكرة وشخصية.
-              </p>
+              أنا محمد حربي رائد الأعمال، ومؤسس قدرات، وحاصل على دكتوراه في إدارة الأعمال. أؤمن بأن الشباب هم القوة الحقيقية للمستقبل، وأن دعمهم وتمكينهم بالمعرفة والمهارات الصحيحة هو المفتاح لبناء جيل قادر على تحقيق النجاح في العالم.              </p>
               {/* <a href="#about">نزل الكتالوج</a> */}
             </div>
           </div>
@@ -306,7 +277,7 @@ const Landing = () => {
           <h1>مكتبة تساعدك في توعية أُسرتك</h1>
           <div className="links-CTA" style={{ display:"flex",gap:"30px"}}>
           <Link to="library">أكتشف المكتبة الان</Link>          </div>
-        </section>
+    </section>
 
         <section id="FAQ">
           <div className="container">

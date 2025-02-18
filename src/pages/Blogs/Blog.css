@@ -1,8 +1,8 @@
 :root{
   --main--color: #006599;
   --yellow--color:#FFB406;
-  --pink--color: #00C1D6;
-  --dark--color:#DF4900;
+  --aqua--color: #00C1D6;
+  --orange--color:#DF4900;
   }
 
   
@@ -51,7 +51,7 @@
   padding: 5px 15px;
   }
   .course-box:hover h1{
-    color: var(--pink--color);
+    color: var(--aqua--color);
   }
   .course-box{
     width: 330px;
@@ -79,7 +79,7 @@
   }
   .container-blog h1{
     text-align: start;
-    color: var(--dark--color);
+    color: var(--orange--color);
     padding: 20px 0 ;
   }
   

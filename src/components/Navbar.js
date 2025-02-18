@@ -30,9 +30,12 @@ const Navbar = () => {
     <>
       <div className="nav-size"></div>
       <header className="navbar">
-        <Link to="/" className="logo">
-          <img src="/assets/Logo-txt.png" alt="Ausrah-Logo" />
-        </Link>
+      <a
+          className="contact-us"
+          href="tel:+201040031584"
+        >
+          تواصل معنا <i className="fa-solid fa-phone-volume"></i>
+        </a>
         <div
           className={`menu-toggle ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
@@ -83,12 +86,10 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <a
-          className="contact-us"
-          href="tel:+201040031584"
-        >
-          تواصل معنا <i className="fa-solid fa-phone-volume"></i>
-        </a>
+
+        <Link to="/" className="logo">
+          <img src="/assets/Dr.Mohamed.svg" alt="Ausrah-Logo" />
+        </Link>
       </header>
     </>
   );

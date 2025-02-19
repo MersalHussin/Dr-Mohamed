@@ -229,7 +229,7 @@ const Landing = () => {
         <section id="achievs">
               <h1 className="title">الإنجازات</h1>
           <div className="container">
-            <img src="/assets/Achivements1.png" alt="achievs" />
+            <img src="/assets/1co.jpg" alt="achievs" />
             <div className="achievs-txt">
               <h2>سبورا تكس</h2>
               <p className="achievs-data">
@@ -237,24 +237,24 @@ const Landing = () => {
             </div>
           </div>
           <div className="container right">
-            <img src="/assets/Achivements1.png" alt="achievs" />
-            <div className="achievs-txt">
+          <img src="/assets/2co.jpg" alt="achievs" />
+          <div className="achievs-txt">
               <h2>بلو ديسك</h2>
               <p className="achievs-data">
               شركة برمجية تقدم حلول تقنية متكاملة، من تطوير المواقع والتطبيقات إلى البرمجيات المخصصة، لضمان تجربة رقمية متميزة.</p>
             </div>
           </div>
           <div className="container">
-            <img src="/assets/Achivements1.png" alt="achievs" />
-            <div className="achievs-txt">
+          <img src="/assets/3co.jpg" alt="achievs" />
+          <div className="achievs-txt">
               <h2>جرين ستوديو</h2>
               <p className="achievs-data">
               استوديو احترافي لتسجيل وتصوير البودكاست والمحتوى الرقمي، بأحدث التقنيات لإنتاج مواد عالية الجودة.</p>
             </div>
           </div>
           <div className="container right">
-            <img src="/assets/Achivements1.png" alt="achievs" />
-            <div className="achievs-txt">
+          <img src="/assets/4co.jpg" alt="achievs" />
+          <div className="achievs-txt">
               <h2>قدرات</h2>
               <p className="achievs-data">
               مدرسة تهدف إلى تطوير المهارات وتنمية القدرات بداية من معرفة ميول الطفل او الشاب وحتى تحويل   الأشخاص إلى رواد أعمال بناءًا على ميولهم              </p>

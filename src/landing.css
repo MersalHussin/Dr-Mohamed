@@ -584,6 +584,7 @@ justify-content: center;
 align-items: center;
 gap: 30px;
 }
+
 #certificate .container img{
 width: 300px !important;
 border: 5px solid var(--yellow--color);

@@ -65,6 +65,19 @@ const Landing = () => {
     },
   ];
 
+
+  const certificates = [
+    {
+      id: 1,
+      image: "/assets/certificates/1.jpg",
+      description: "شركة متخصصة في الأقمشة الرياضية، الطباعة، تصميم الباترونات، والتقفيل بأعلى جودة لتلبية احتياجات السوق الرياضي."
+    },
+    {
+      id: 1,
+      image: "/assets/certificates/1.jpg",
+      description: "شركة متخصصة في الأقمشة الرياضية، الطباعة، تصميم الباترونات، والتقفيل بأعلى جودة لتلبية احتياجات السوق الرياضي."
+    },
+  ];
   const handleVideoClick = (videoSrc) => {
     setActiveVideo(videoSrc); // تعيين الفيديو النشط
   };
@@ -262,26 +275,14 @@ const Landing = () => {
           </div>
         </section>
 
-
-        <section id="courses">
-          <div className="container">
-            <h1 className="title">المدونة</h1>
-            <div className="courses-container">
-              {courses.map((course, index) => (
-                <Link key={index} to={`/blog${index + 1}`}>
-                  <div className="course-box">
-                    <img src={course.imageSrc} alt={course.title} />
-                    <h1>{course.title}</h1>
-                    <p>{course.subject}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <a className="btn explore" href="#">
-              أكتشف المزيد
-            </a>
-          </div>
-        </section>
+<section id="certificate">
+  <h1 className="title">الشهادات</h1>
+  <div className="container" >
+  {certificates.map((cert) => (
+      <img src={cert.image} key={cert.id} alt={cert.title} />
+    ))}
+    </div>
+</section>
 
 
         <Footer />

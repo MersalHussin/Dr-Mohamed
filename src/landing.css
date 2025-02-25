@@ -574,6 +574,7 @@ iframe{
   align-items: center;
   flex-direction: column;
   background-color: var(--main--color);
+  padding: 50px 20px;
 }
 #certificate .title{
  color: white;
@@ -582,11 +583,14 @@ iframe{
 display: flex;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 gap: 30px;
+max-width: 1200px;
+padding: 50px 30px;
 }
 
 #certificate .container img{
-width: 300px !important;
+width: 320px !important;
 border: 5px solid var(--yellow--color);
 }
 /* End -- Video -- */

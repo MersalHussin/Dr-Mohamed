@@ -70,12 +70,34 @@ const Landing = () => {
     {
       id: 1,
       image: "/assets/certificates/1.jpg",
-      description: "شركة متخصصة في الأقمشة الرياضية، الطباعة، تصميم الباترونات، والتقفيل بأعلى جودة لتلبية احتياجات السوق الرياضي."
     },
     {
-      id: 1,
-      image: "/assets/certificates/1.jpg",
-      description: "شركة متخصصة في الأقمشة الرياضية، الطباعة، تصميم الباترونات، والتقفيل بأعلى جودة لتلبية احتياجات السوق الرياضي."
+      id: 2,
+      image: "/assets/certificates/2.jpg",
+    },
+    {
+      id: 3,
+      image: "/assets/certificates/3.jpg",
+    },
+    {
+      id: 4,
+      image: "/assets/certificates/4.jpg",
+    },
+    {
+      id: 5,
+      image: "/assets/certificates/5.jpg",
+    },
+    {
+      id: 6,
+      image: "/assets/certificates/6.jpg",
+    },
+    {
+      id: 7,
+      image: "/assets/certificates/7.jpg",
+    },
+    {
+      id: 8,
+      image: "/assets/certificates/8.jpg",
     },
   ];
   const handleVideoClick = (videoSrc) => {

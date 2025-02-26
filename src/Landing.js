@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
+import Testimonials from "./components/testimonials";
 
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -306,6 +307,9 @@ const Landing = () => {
     </div>
 </section>
 
+<section>
+  <Testimonials/>
+</section>
 
         <Footer />
       </main>

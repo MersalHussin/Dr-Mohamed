@@ -1,124 +1,207 @@
-
-:root{
+:root {
   --main--color: #006599;
-  --yellow--color:#FFB406;
-  --aqua--color: #00C1D6;
-  --orange--color:#DF4900;
+  --yellow--color: #ffb406;
+  --aqua--color: #00c1d6;
+  --orange--color: #df4900;
 }
 
-
+/* حاوية الشهادات - جعلها متجاوبة بشكل أفضل */
 .testimonials-container {
   text-align: center;
-  color: var(--main--color); /* لون النص الزرقاء مثل الصورة */
-  margin: 20px;
+  color: var(--main--color);
+  width: 100%;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 20px;
+  direction: rtl;
+  overflow: hidden; /* لمنع التمرير الأفقي */
+}
+
+/* تعديل العنوان ليكون متجاوبًا */
+.title {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* حجم خط متجاوب */
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* تعديل حاوية Swiper */
+.testimonials-swiper {
+  width: 100%;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+/* تعديل بطاقة الشهادة */
+.testimonial-card {
+  background: white;
+  border: 2px solid #f4a100;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 300px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* تعديل صورة الشهادة */
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 5px solid #22c55e;
+}
+
+/* تعديل اسم الشخص */
+.testimonial-name {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* تعديل العنوان الوظيفي */
+.testimonial-title {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* تعديل نص الشهادة */
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* تعديل أيقونة الاقتباس */
+.quote-icon {
+  font-size: 2rem;
+  color: #1e3a8a;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* تخصيص أزرار التنقل */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: var(--main--color);
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 18px;
+}
+
+.swiper-rtl .swiper-button-next:after {
+  content: "\f359";
+  font-family: "Font Awesome\ 5 Free";
+  color: white;
+}
+
+.swiper-rtl .swiper-button-prev:after {
+  content: "\f35a";
+  font-family: "Font Awesome\ 5 Free";
+  color: white;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--yellow--color);
+}
+
+/* تعديلات للشاشات المختلفة */
+@media (max-width: 1200px) {
+  .testimonials-container {
+    padding: 15px;
   }
-  
-  @media(width < 1200px){
-    .testimonials-container{
-      width: 800px;
-    }
-  }
-  @media(width < 768px){
-    .testimonials-container{
-      width: 350px;
-    }
-  }
-  .title {
-    font-size: 2.5rem;
-    color: #1e3a8a;
-    margin-bottom: 10px;
-    font-weight: bold;
-    margin: auto;
-  }
-  
-  
+
   .testimonial-card {
-    background: white;
-    border: 2px solid #f4a100; /* إطار برتقالي مثل الصورة */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    margin: 0 auto;
-    position: relative;
+    max-width: 100%;
+    padding: 15px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 10px;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+    min-height: 280px;
+  }
+
   .testimonial-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 5px solid #22c55e; /* إطار أخضر للصورة */
+    width: 80px;
+    height: 80px;
   }
-  
+
   .testimonial-name {
-    font-size: 1.5rem;
-    color: #1e3a8a;
-    margin-bottom: 5px;
+    font-size: 1.3rem;
   }
-  
-  .testimonial-title {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 15px;
-  }
-  
-  .testimonial-text {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .quote-icon {
-    font-size: 2rem;
-    color: #1e3a8a;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  .swiper {
-    margin: 20px;
-  }
-  
-  /* تخصيص أزرار التنقل (Navigation) لتكون زرقاء مثل الصورة */
+
   .swiper-button-prev,
   .swiper-button-next {
-    color: white;
-    width: 20px;
-    height: 20px;
-    background: var(--main--color);
-    border-radius: 50%;
-    transition: background 0.3s;
+    width: 30px;
+    height: 30px;
+  }
+}
 
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: 12px;
+    min-height: 260px;
   }
 
-  
-.swiper-rtl .swiper-button-next:after{
-    content: "\f359";
-    font-family: 'Font Awesome\ 5 Free';
-    color:white;
+  .testimonial-img {
+    width: 70px;
+    height: 70px;
+    border-width: 3px;
   }
- .swiper-rtl .swiper-button-prev:after{
-    content: "\f35a";
-    font-family: 'Font Awesome\ 5 Free';
-    color:white;
+
+  .testimonial-name {
+    font-size: 1.2rem;
   }
-  
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    background: var(--yellow--color);
+
+  .testimonial-title {
+    font-size: 0.9rem;
   }
-  
-  /* إخفاء الأزرار إذا لزم الأمر على الأجهزة الصغيرة */
-  @media (max-width: 768px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: none;
-    }
+
+  .testimonial-text {
+    font-size: 0.9rem;
   }
+
+  .quote-icon {
+    font-size: 1.5rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+

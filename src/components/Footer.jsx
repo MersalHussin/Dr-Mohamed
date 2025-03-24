@@ -26,7 +26,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="line"></div>
-            <div className="copyright">جميع الحقوق محفوظة لـ أسرة © 2025</div>
+            <div className="copyright">جميع الحقوق محفوظة لـ د. محمد حربي © 2025</div>
         </footer>
     );
 }

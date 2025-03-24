@@ -58,7 +58,7 @@ const Navbar = () => {
               href="#about-sec"
               className={activeSection === "#about-sec" ? "active" : ""}
             >
-              عن أُسرة
+              من أنا
             </a>
           </li>
           <li>
@@ -66,7 +66,7 @@ const Navbar = () => {
               href="#courses"
               className={activeSection === "#courses" ? "active" : ""}
             >
-              المدونة
+              إنجازاتي
             </a>
           </li>
           <li>

@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
 import Testimonials from "./components/testimonials";
+import Models from "./components/Models";
 
 const Landing = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -203,8 +204,8 @@ const Landing = () => {
               <div className="image-grid">
                   {/* الصف الأول - صورتين كبيرتين */}
                 <div className="grid-item wide">
-                  <img src="/assets/2.png" alt="أب لـ ٣ مراهقين" />
-                  <div className="overlay">أب لـ ٣ مراهقين</div>
+                  <img src="/assets/2.png" alt="أبو المراهقين" />
+                  <div className="overlay">أبو المراهقين</div>
                 </div>
                 <div className="grid-item wide">
                   <img src="/assets/1.png"alt="دكتوراة إدارة أعمال" />
@@ -305,6 +306,10 @@ const Landing = () => {
       <img src={cert.image} key={cert.id} alt={cert.title} />
     ))}
     </div>
+</section>
+<section className="models-sec">
+<h1 className="title white">نماذج عمل</h1>
+    <Models/>
 </section>
 
 <section>

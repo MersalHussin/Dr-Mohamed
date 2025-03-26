@@ -315,7 +315,18 @@ const Landing = () => {
 <section>
   <Testimonials/>
 </section>
-<section>
+
+<section className="cards-">
+    <div class="card">
+        <img src="./assets/3co.jpg" alt="فريق قدرات" class="card-image"/>
+        <div class="card-content">
+            <h2 class="card-title">فريق قدرات</h2>
+            <div class="card-details">
+                <p class="card-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة. لقد تم توليد هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص.</p>
+                {/* <a href="#" class="card-button">عرض المزيد</a> */}
+            </div>
+        </div>
+    </div>
 <div class="card">
         <img src="./assets/3co.jpg" alt="فريق قدرات" class="card-image"/>
         <div class="card-content">

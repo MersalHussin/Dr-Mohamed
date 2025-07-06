@@ -4,26 +4,31 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("#"); // تخزين السيكشن النشط
+  const [activeSection, setActiveSection] = useState(""); // تخزين السيكشن النشط
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
-        });
-      },
-      { threshold: 0.6 } // تحديد متى يعتبر السيكشن ظاهرًا (60% منه على الأقل)
-    );
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      const scrollPosition = window.scrollY + 100; // إضافة offset للـ navbar
 
-    sections.forEach((section) => observer.observe(section));
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute("id");
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(`#${sectionId}`);
+        }
+      });
+
+      // إذا كنا في أعلى الصفحة، اجعل الرئيسية نشطة
+      if (scrollPosition < 100) {
+        setActiveSection("");
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -32,9 +37,10 @@ const Navbar = () => {
       <header className="navbar">
       <a
           className="contact-us"
-          href="tel:+201040031584"
+          href="https://icancoachyou.online/en/coaches/mohamed-1749843538151"
+          target="_blank"
         >
-          تواصل معنا <i className="fa-solid fa-phone-volume"></i>
+          أحجز استشارة <i className="fa-solid fa-calendar-day"></i>
         </a>
         <div
           className={`menu-toggle ${menuOpen ? "active" : ""}`}
@@ -48,7 +54,7 @@ const Navbar = () => {
           <li>
             <a
               href="#"
-              className={activeSection === "#" ? "active" : ""}
+              className={activeSection === "" ? "active" : ""}
             >
               الرئيسية
             </a>
@@ -63,26 +69,34 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#courses"
-              className={activeSection === "#courses" ? "active" : ""}
+              href="#video-shorts"
+              className={activeSection === "#video-shorts" ? "active" : ""}
             >
-              إنجازاتي
+              منهجية الـ 6PS
             </a>
           </li>
           <li>
             <a
-              href="#Feedback"
-              className={activeSection === "#Feedback" ? "active" : ""}
+              href="#achievs"
+              className={activeSection === "#achievs" ? "active" : ""}
             >
-              أراء المستخدمين
+              الإنجازات
             </a>
           </li>
           <li>
             <a
-              href="#FAQ"
-              className={activeSection === "#FAQ" ? "active" : ""}
+              href="#certificate"
+              className={activeSection === "#certificate" ? "active" : ""}
             >
-              الأسئلة الشائعة
+              الشهادات
+            </a>
+          </li>
+          <li>
+            <a
+              href="#models-sec"
+              className={activeSection === "#models-sec" ? "active" : ""}
+            >
+              نماذج الشباب
             </a>
           </li>
         </ul>

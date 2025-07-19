@@ -209,7 +209,7 @@ border-radius: 50%;
 }
 
 .hero-section .container .text {
-  width: 660px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -222,7 +222,7 @@ border-radius: 50%;
   font-size: 50px;
   font-weight: bold;
   color: white;
-  line-height: 1.8;
+  line-height: 1.6;
   text-align: center;
 }
 .hero-section .container .text h1 span{
@@ -230,7 +230,7 @@ color: var(--yellow--color);
 }
 
 .hero-section .container .text p{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   border-radius: 5px;
   color: white;
@@ -271,13 +271,13 @@ color: var(--yellow--color);
       font-size: 42px !important;
   }
   .hero-section .container p{
-      font-size: 19px !important;
+      font-size: 15px !important;
   }
 }
 
 @media( width < 660px ){
     .hero-section .container .text{
-      width: 400px;
+      width: 350px;
       font-size: 16px;
   }
 }
@@ -688,15 +688,16 @@ flex-direction: column;
   position: absolute;
   top: -10px;
   right: -10px;
-  background: white;
+  background: transparent;
   padding: 10px;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   border: none;
-  font-size: 24px;
+  font-size: 45px;
+  font-weight: bold;
   cursor: pointer;
-  color: var(--main--color);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1156,19 +1157,20 @@ footer .copyright{
 
 .video-info p {
   color: #666;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px;
 }
 
+  
 /* Video Modal Styles */
 .video-modal {
   max-width: 90vw;
   max-height: 90vh;
   width: 800px;
-  height: 450px;
   border-radius: 15px;
-  overflow: hidden;
 }
 
 .video-modal iframe {
@@ -1201,6 +1203,7 @@ footer .copyright{
   
   .video-info p {
     font-size: 14px;
+        max-width: 350px;
   }
   
   .methodology-link {
